@@ -1,0 +1,36 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "imdb_rating"
+version = "0.0.1"
+description = "Experimentaci\u00f3n con MLflow para predecir el rating de IMDb (TC5061 S04)"
+authors = [
+  { name = "Carlos David Martinez Calva" },
+]
+license = { file = "LICENSE" }
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License"
+]
+requires-python = "~=3.14.0"
+
+
+[tool.ruff]
+line-length = 99
+src = ["imdb_rating"]
+include = ["pyproject.toml", "imdb_rating/**/*.py"]
+
+[tool.ruff.lint]
+extend-select = ["I"]  # Add import sorting
+
+[tool.ruff.lint.isort]
+known-first-party = ["imdb_rating"]
+force-sort-within-sections = true
+
+
+[tool.ruff.lint.flake8-bugbear]
+# typer.Option() en los defaults es el patrón de Typer para declarar la CLI
+extend-immutable-calls = ["typer.Option"]

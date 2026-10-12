@@ -1,0 +1,32 @@
+# Versiones fijadas del entorno conda TC5061_mlflow (Python 3.14)
+
+# Datos y modelo
+numpy==2.5.3
+pandas==3.0.6
+scikit-learn==1.9.1
+
+# Seguimiento de experimentos (skops: formato con el que MLflow serializa el modelo)
+mlflow==3.16.1
+skops==0.16.0
+
+# Visualización
+matplotlib==3.11.2
+seaborn==0.13.2
+
+# CLI y utilidades
+typer==0.27.3
+loguru==0.7.3
+python-dotenv==1.2.4
+tqdm==4.70.1
+
+# Exploración (notebooks)
+ipython==9.17.1
+jupyterlab==4.6.4
+notebook==7.6.3
+
+# Calidad de código
+pytest==9.1.1
+ruff==0.17.0
+
+# Instala el paquete del proyecto (imdb_rating) en modo editable
+-e .

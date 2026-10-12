@@ -1,0 +1,45 @@
+# Reglas generales para todas las entregas del repositorio.
+# Las reglas de datos y modelos de cada proyecto viven en su propio .gitignore.
+
+# Sistema operativo
+.DS_Store
+._*
+Thumbs.db
+desktop.ini
+
+# Editores e IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+
+# Herramientas
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+.ipynb_checkpoints/
+
+# Ambientes y secretos
+.env
+.venv/
+venv/
+env/
+
+# MLflow local
+mlflow.db
+mlruns/
+mlartifacts/
+
+# Logs y temporales
+*.log
+*.tmp
